@@ -1,0 +1,16 @@
+{
+  "json_class": "Chef::Role",
+  "name": "appserver",
+  "description": "Rails application server",
+  "run_list": ["recipe[apt]", "recipe[rails]", "recipe[users]"],
+  "default_attributes": {
+    "users": {
+      "brunosbarros": {
+        "ssh_keys": {
+          "brunosbarros": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCyzY+ayOTT24znhY4ISQ4MtWLmdluiTAGBcojSe6O0iVoilFYLPB99+ty+ptCcJR/3hktN6hk083qsLtGpAclm7M4VmraoaIHyi+YtXver7Co11iEh7g9X3vdMlXy/cB3P3jIjeAo6sohzLHJeZcFVYSAXz1QGv+YmzgyFNAdR4HSUky4KwgeCyh8xdUHS27Hy9EAI3iHIyWwLYjDk6oq7YQGwzginXhzy4hiMTeyyX0dBDJOtmgqQAhPaif3jDe3hcV/0hJ94QLbQlXS6GoI/Qx2HLmOlvgeKRyUYXCld3+z6oy77ciMHMpMVs/rRVqqEuBDTHBN19U6/CEq5xBB1 bkether@gmail.com"
+        },
+        "password": "$1$60Gwwckz$..YZJOwbEoN6SWE0iZXLS."
+      }
+    }
+  }
+}
